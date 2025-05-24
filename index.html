@@ -1,92 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Moso Capital</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
       font-family: 'Montserrat', sans-serif;
+      color: #f5f5f5;
     }
 
-    header {
+    .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 40px;
+      padding: 10px 60px;
       background-color: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    header img {
-      height: 40px;
+    .navbar img {
+      height: 75px;
     }
 
-    nav a {
-      margin-left: 40px;
-      text-decoration: none;
-      color: #333;
-      font-size: 1.1rem;
-      font-weight: 500;
-    }
-
-    .hero {
+    .nav-links {
       display: flex;
-      height: calc(100vh - 70px);
+      gap: 40px;
+      font-size: 18px;
+      color: #000000;
     }
 
-    .hero-text {
-      background-color: #84D9BD;
-      flex: 1;
+    .main {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 60px;
-      color: #222;
+      height: 100vh;
     }
 
-    .hero-text h1 {
-      font-size: 2.8rem;
+    .left {
+  background-color: #33C89B;
+  padding: 60px;
+  flex: 1;
+    }
+
+    .left h1 {
+      font-size: 48px;
       margin-bottom: 30px;
-      font-weight: 600;
+      color: #f5f5f5;
     }
 
-    .hero-text p {
-      font-size: 1rem;
-      max-width: 580px;
-      line-height: 1.6;
+    .left p {
+      font-size: 18px;
+      max-width: 600px;
+      color: #f5f5f5;
     }
 
-    .hero-buttons {
+    .buttons {
       margin-top: 30px;
-      display: flex;
-      gap: 16px;
     }
 
-    .hero-buttons a {
-      text-decoration: none;
+    .buttons button {
+      background-color: transparent;
+      color: #FFFFFF;
+      border: 2px solid #FFFFFF;
       padding: 12px 24px;
-      border: 2px solid #222;
-      color: #222;
-      font-weight: 500;
-      display: inline-block;
-      transition: background-color 0.3s, color 0.3s;
+      font-size: 16px;
+      margin-right: 20px;
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 8px;
+      cursor: pointer;
     }
 
-    .hero-buttons a:hover {
-      background-color: #222;
-      color: white;
-    }
-
-    .hero-image {
+    .right {
       flex: 1;
     }
 
-    .hero-image img {
+    .right img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -94,28 +83,100 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="./moso-logo.png" alt="Moso Capital Logo">
-    <nav>
-      <a href="#">Why Moso?</a>
-      <a href="#">Team</a>
-      <a href="#">Case Study</a>
-      <a href="#">Insights</a>
-    </nav>
-  </header>
-
-  <div class="hero">
-    <div class="hero-text">
-      <h1>We train the next generation of bold investors</h1>
-      <p>Moso Capital is the University of Pennsylvania's premier experiential venture capital program. By mirroring an investment fund, we empower top undergraduates to gain hands-on investing experience while supporting our venture and angel investors in sourcing and diligencing the most exciting startups.</p>
-      <div class="hero-buttons">
-        <a href="#">Learn More</a>
-        <a href="#">Contact Us</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="./hero-photo.jpg" alt="Moso Capital Team">
+  <div class="navbar">
+    <img src="moso-logo.png" alt="Moso Capital Logo" />
+    <div class="nav-links">
+      <div>Why Moso?</div>
+      <div>Team</div>
+      <div>Case Study</div>
+      <div>Insights</div>
     </div>
   </div>
+
+  <div class="main">
+    <div class="left">
+      <h1>We train the next generation of bold investors</h1>
+      <p>
+        Moso Capital is the University of Pennsylvania's premier experiential
+        venture capital program. By mirroring an investment fund, we empower
+        top undergraduates to gain hands-on investing experience while
+        supporting our venture and angel investors in sourcing and conducting 
+        diligence on the most exciting startups.
+      </p>
+      <div class="buttons">
+        <button>Learn More</button>
+        <button>Contact Us</button>
+      </div>
+    </div>
+    <div class="right">
+      <img src="hero-photo.jpg" alt="Moso Capital Team" />
+    </div>
+  </div>
+
+    <div style="position: relative; text-align: center; font-family: 'Montserrat', sans-serif; color: white;">
+  <!-- Background image with dark overlay -->
+  <div style="
+    background-image: url('download.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  "></div>
+  <div style="
+    background-color: rgba(0, 0, 0, 0.6); 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  "></div>
+
+  <!-- Section content -->
+  <div style="padding: 120px 20px;">
+    <h2 style="max-width: 800px; margin: 0 auto 40px auto; font-size: 32px; font-weight: 400; line-height: 1.6;">
+      We build thoughtful connections between bold founders and sharp investors, acting as a trusted first touchpoint and long-term partner in the venture process.
+    </h2>
+    <button style="margin-top: 20px; background-color: transparent; border: 2px solid white; color: white; padding: 12px 24px; font-size: 16px; border-radius: 999px; cursor: pointer;">
+      Our Approach
+    </button>
+  </div>
+</div>
+
+<!-- Testimonial Section -->
+<section style="font-family: 'Montserrat', sans-serif; background-color: #FDF8F3; padding: 60px 0;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 0 20px;">
+    <!-- Text Block -->
+    <div style="flex: 1; min-width: 300px; max-width: 500px;">
+      <h2 style="font-size: 42px; color: #1e1e1e; font-weight: 500;">At Moso, relationships come first.</h2>
+      <p style="margin: 30px 0; font-size: 18px; color: #2e2e2e; line-height: 1.5;">
+        A partnership with Moso isn’t just a short-term project — it’s a lasting commitment to the founders we believe in and the investors we work alongside to bring their visions to life.
+      </p>
+      <button style="padding: 12px 24px; font-size: 16px; border: 1px solid #1e1e1e; border-radius: 30px; background: transparent; cursor: pointer;">
+        Meet The Team
+      </button>
+    </div>
+
+    <!-- Image Carousel -->
+    <div style="flex: 1; min-width: 300px; max-width: 500px; position: relative;">
+      <img id="testimonial-img" src="testimonial1.jpg" alt="Testimonial" style="width: 100%; height: auto; border-radius: 6px; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: opacity 0.6s ease;">
+    </div>
+  </div>
+</section>
+
+<script>
+  const testimonialImages = ["testimonial1.jpg", "testimonial2.jpg"];
+  let testimonialIndex = 0;
+  setInterval(() => {
+    testimonialIndex = (testimonialIndex + 1) % testimonialImages.length;
+    const imgElement = document.getElementById("testimonial-img");
+    imgElement.style.opacity = 0;
+    setTimeout(() => {
+      imgElement.src = testimonialImages[testimonialIndex];
+      imgElement.style.opacity = 1;
+    }, 300);
+  }, 6000); // 6 second interval
+</script>
+
 </body>
 </html>
