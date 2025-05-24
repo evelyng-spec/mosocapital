@@ -1,113 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moso Capital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }
-
-    body {
+      box-sizing: border-box;
       font-family: 'Montserrat', sans-serif;
-      background-color: white;
-      color: #1c1c1c;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 24px 60px;
-      border-bottom: 1px solid #eee;
+      padding: 16px 40px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
-    .logo img {
-      height: 56px; /* enlarged */
-    }
-
-    nav {
-      display: flex;
-      gap: 40px;
+    header img {
+      height: 40px;
     }
 
     nav a {
+      margin-left: 40px;
       text-decoration: none;
-      color: #1c1c1c;
+      color: #333;
+      font-size: 1.1rem;
       font-weight: 500;
-      font-size: 18px; /* increased size */
     }
 
-    .content {
+    .hero {
       display: flex;
-      flex-wrap: wrap;
-      align-items: stretch;
-      min-height: 90vh;
+      height: calc(100vh - 70px);
     }
 
-    .text-side {
+    .hero-text {
+      background-color: #84D9BD;
       flex: 1;
-      background-color: #d1e0db;
-      padding: 80px 60px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: 60px;
+      color: #222;
     }
 
-    .text-side h1 {
-      font-size: 3rem;
-      font-weight: 600;
+    .hero-text h1 {
+      font-size: 2.8rem;
       margin-bottom: 30px;
-      line-height: 1.2;
+      font-weight: 600;
     }
 
-    .text-side p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      max-width: 640px;
+    .hero-text p {
+      font-size: 1rem;
+      max-width: 580px;
+      line-height: 1.6;
     }
 
-    .image-side {
+    .hero-buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .hero-buttons a {
+      text-decoration: none;
+      padding: 12px 24px;
+      border: 2px solid #222;
+      color: #222;
+      font-weight: 500;
+      display: inline-block;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #222;
+      color: white;
+    }
+
+    .hero-image {
       flex: 1;
-      background: url('team-photo-web.jpg') no-repeat center center;
-      background-size: cover;
     }
 
-    @media (max-width: 900px) {
-      .content {
-        flex-direction: column;
-      }
-
-      .image-side {
-        height: 300px;
-      }
-
-      .text-side {
-        padding: 40px 30px;
-      }
-
-      .text-side h1 {
-        font-size: 2rem;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
-      }
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="moso-logo-transparent.png" alt="Moso Capital Logo" />
-    </div>
+    <img src="./moso-logo.png" alt="Moso Capital Logo">
     <nav>
       <a href="#">Why Moso?</a>
       <a href="#">Team</a>
@@ -116,15 +104,18 @@
     </nav>
   </header>
 
-  <div class="content">
-    <div class="text-side">
+  <div class="hero">
+    <div class="hero-text">
       <h1>We train the next generation of bold investors</h1>
-      <p>
-        Moso Capital is the University of Pennsylvania's premier experiential venture capital program.
-        By mirroring an investment fund, we empower top undergraduates to gain hands-on investing experience while supporting our venture and angel investors in sourcing and diligencing the most exciting startups.
-      </p>
+      <p>Moso Capital is the University of Pennsylvania's premier experiential venture capital program. By mirroring an investment fund, we empower top undergraduates to gain hands-on investing experience while supporting our venture and angel investors in sourcing and diligencing the most exciting startups.</p>
+      <div class="hero-buttons">
+        <a href="#">Learn More</a>
+        <a href="#">Contact Us</a>
+      </div>
     </div>
-    <div class="image-side"></div>
+    <div class="hero-image">
+      <img src="./hero-photo.jpg" alt="Moso Capital Team">
+    </div>
   </div>
 </body>
 </html>
