@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team | Moso Capital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #FDF8F3;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 60px;
+      background-color: #FDF8F3;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar img {
+      height: 75px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      font-size: 18px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+
+    .hero {
+  position: relative;
+  height: 600px;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px;
+}
+
+.hero::before {
+  content: '';
+  background-image: url('team.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -2;
+}
+
+.hero::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 1000px;
+  padding: 0 20px;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">
+      <img src="moso-logo.png" alt="Moso Capital Logo" />
+    </a>
+    <div class="nav-links">
+      <a href="whymoso.html">Why Moso?</a>
+      <a href="team.html">Team</a>
+      <a href="case-study.html">Case Study</a>
+      <a href="insights.html">Insights</a>
+      <a href="join-us.html">Join Us</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 style="font-size: 56px; font-weight: 600; margin-bottom: 24px;">You choose who you partner with.</h1>
+    <p style="font-size: 20px; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+      We are students, yes. But we are also founders, operators, scientists, coders, analysts, and investors.
+      We’ve launched startups, led research labs, coded full-stack apps, and pitched deals to real VCs.
+      We understand what it means to hustle, to build, and to support — and we bring that same energy to every founder we partner with.
+    </p>
+  </div>
+</section>
+
+<!-- Team Grid Section -->
+<section style="padding: 60px 40px; background-color: #FDF8F3; font-family: 'Montserrat', sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center;">
+
+      <!-- Allen Yao -->
+      <a href="https://www.linkedin.com/in/ay04/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="allen-yao.jpeg" alt="Allen Yao" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Allen Yao</h3>
+        <p style="font-size: 14px;">Founder & Advisor</p>
+      </a>
+
+      <!-- Evelyn Nguyen -->
+      <a href="https://www.linkedin.com/in/evelynng912/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="evelyn-nguyen.jpeg" alt="Evelyn Nguyen" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Evelyn Nguyen</h3>
+        <p style="font-size: 14px;">Managing Partner</p>
+      </a>
+
+      <!-- James Rush -->
+      <a href="https://www.linkedin.com/in/jamesrrush/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="james-rush.jpeg" alt="James Rush" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">James Rush</h3>
+        <p style="font-size: 14px;">Managing Director</p>
+      </a>
+
+      <!-- Diya Reddy -->
+      <a href="https://www.linkedin.com/in/diyareddy/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="diya-reddy.jpeg" alt="Diya Reddy" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Diya Reddy</h3>
+        <p style="font-size: 14px;">Managing Director</p>
+      </a>
+
+      <!-- Olivia Liu -->
+      <a href="https://www.linkedin.com/in/olivia-liu-504918296/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="olivia-liu.jpeg" alt="Olivia Liu" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Olivia Liu</h3>
+        <p style="font-size: 14px;">Managing Director</p>
+      </a>
+
+      <!-- Zach Rodger -->
+      <a href="https://www.linkedin.com/in/zach-rodger/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="zach-rodger.jpeg" alt="Zach Rodger" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Zach Rodger</h3>
+        <p style="font-size: 14px;">Managing Director</p>
+      </a>
+
+      <!-- Arihant Boli -->
+      <a href="https://www.linkedin.com/in/arihant-boli-22bbb11b5/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="arihant-boli.jpeg" alt="Arihant Boli" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Arihant Boli</h3>
+        <p style="font-size: 14px;">Managing Director</p>
+      </a>
+
+      <!-- Anika Chebrolu -->
+      <a href="https://www.linkedin.com/in/anika-chebrolu/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="anika-chebrolu.jpeg" alt="Anika Chebrolu" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Anika Chebrolu</h3>
+        <p style="font-size: 14px;">Managing Director</p>
+      </a>
+
+      <!-- Rohan Athavale -->
+      <a href="https://www.linkedin.com/in/rohanathavale/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="rohan-athavale.jpeg" alt="Rohan Athavale" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Rohan Athavale</h3>
+        <p style="font-size: 14px;">Vice President of Social & Recruitment</p>
+      </a>
+
+     <!-- Anushka Chintamaneni -->
+      <a href="https://www.linkedin.com/in/a-chintamaneni/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="anushka.jpeg" alt="Anushka Chintamaneni" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Anushka Chintamaneni</h3>
+        <p style="font-size: 14px;">Vice President of Social & Recruitment</p>
+      </a>
+
+     <!-- Evan Harford -->
+      <a href="https://www.linkedin.com/in/evan-harford/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="evan.jpeg" alt="Evan Harford" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Evan Harford</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+ 
+	<!-- Elianna Huang -->
+      <a href="https://www.linkedin.com/in/evan-harford/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="elianna.jpeg" alt="Elianna Huang" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Elianna Huang</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+
+      <!-- Wesley Chen -->
+      <a href="https://www.linkedin.com/in/wesley-ch/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="wesley.jpeg" alt="Wesley Chen" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Wesley Chen</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+
+	<!-- Karan Colaco -->
+      <a href="https://www.linkedin.com/in/karan-colaco-a58321310/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="karan.jpeg" alt="Karan Colaco" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Karan Colaco</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+	
+	<!-- Allison Xu -->
+      <a href="https://www.linkedin.com/in/allison-xu-7a6516220/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="allison.jpeg" alt="Allison Xu" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Allison Xu</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+
+	<!-- Cristina Higueras Salazar -->
+      <a href="https://www.linkedin.com/in/chigueras/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="cris.jpeg" alt="Cristina Higueras Salazar" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Cristina Higueras Salazar</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+      
+	<!-- Mia Liu -->
+      <a href="https://www.linkedin.com/in/mia-liu-a7299a324/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="mia.jpeg" alt="Mia Liu" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Mia Liu</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+
+	<!-- Sid Jain -->
+      <a href="https://www.linkedin.com/in/jainsid06/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="sid.jpeg" alt="Sid Jain" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Sid Jain</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+
+	<!-- Lahari Donepudi -->
+      <a href="https://www.linkedin.com/in/laharidonepudi/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="lahari.jpeg" alt="Lahari Donepudi" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Lahari Donepudi</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+
+      <!-- Mark Quaglia -->
+      <a href="https://www.linkedin.com/in/markquagliajr/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="mark.jpeg" alt="Mark Quaglia" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Mark Quaglia</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+
+     <!-- Abigal Shin -->
+      <a href="https://www.linkedin.com/in/abigailmshin/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="abby.jpeg" alt="Abigal Shin" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Abigal Shin</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+	
+	<!-- Nehal Bajaj -->
+      <a href="https://www.linkedin.com/in/nehal-bajaj/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="nehal.jpeg" alt="Nehal Bajaj" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Nehal Bajaj</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+
+	<!-- Karthik Kaligotla -->
+      <a href="https://www.linkedin.com/in/karthik-kaligotla/" target="_blank" style="text-decoration: none; color: #1e1e1e;">
+        <img src="karthik.jpeg" alt="Karthik Kaligotla" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+        <h3 style="margin-top: 16px; font-size: 18px;">Karthik Kaligotla</h3>
+        <p style="font-size: 14px;">Analyst</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer style="background-color: #14946C; font-family: 'Montserrat', sans-serif; color: #f5f5f5;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px; display: flex; flex-wrap: wrap; gap: 80px;">
+
+    <!-- Column 1: Organization -->
+    <div style="min-width: 200px;">
+      <h3 style="font-weight: 500; margin-bottom: 1rem;">Organization</h3>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li><a href="why.html" style="color: #FDF8F3; text-decoration: underline;">Why Moso?</a></li>
+        <li><a href="#" style="color: #FDF8F3; text-decoration: underline;">Team</a></li>
+        <li><a href="#" style="color: #FDF8F3; text-decoration: underline;">Case Study</a></li>
+        <li><a href="#" style="color: #FDF8F3; text-decoration: underline;">Insights</a></li>
+	<li><a href="#" style="color: #FDF8F3; text-decoration: underline;">Join Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 2: Contact -->
+    <div style="min-width: 200px;">
+      <h3 style="font-weight: 500; margin-bottom: 1rem;">Contact</h3>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li><a href="#" style="color: #FDF8F3; text-decoration: underline;">Get in Touch</a></li>
+	<li><a href="#" style="color: #FDF8F3; text-decoration: underline;">Join Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+<!-- Footer bottom bar -->
+  <div style="border-top: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; flex-wrap: wrap;">
+    <div style="display: flex; gap: 20px;">
+      <a href="#"><img src="linkedin.svg" alt="LinkedIn" style="height: 20px;"></a>
+      <a href="#"><img src="instagram.svg" alt="Instagram" style="height: 20px;"></a>
+    </div>
+    <p style="margin: 0; font-size: 14px;">© Moso Capital, 2025</p>
+  </div>
+</footer>
+
+</body>
+</html>
