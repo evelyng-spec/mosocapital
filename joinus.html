@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team | Moso Capital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #FDF8F3;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 60px;
+      background-color: #FDF8F3;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar img {
+      height: 75px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      font-size: 18px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+
+    .hero {
+  position: relative;
+  height: 600px;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px;
+}
+
+.hero::before {
+  content: '';
+  background-image: url('joinus.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -2;
+}
+
+.hero::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 1000px;
+  padding: 0 20px;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">
+      <img src="moso-logo.png" alt="Moso Capital Logo" />
+    </a>
+    <div class="nav-links">
+      <a href="whymoso.html">Why Moso?</a>
+      <a href="team.html">Team</a>
+      <a href="case-study.html">Case Study</a>
+      <a href="insights.html">Insights</a>
+      <a href="join-us.html">Join Us</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 style="font-size: 56px; font-weight: 600; margin-bottom: 24px;">Teammates, friends, and community of doers.</h1>
+    <p style="font-size: 20px; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+      We build, invest, and learn together — but we also laugh a lot along the way. From career treks to board game nights to morning runs, Moso is where ambitious students find teammates, friends, and a second family.
+    </p>
+  </div>
+</section>
+
+ <!-- Education curriculum -->
+  <section style="background-color: #FDF8F3; padding: 20px 0px; font-family: 'Montserrat', sans-serif; color: #1e1e1e;">
+  <div style="
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  ">
+
+    <!-- Text Block (left, vertically centered) -->
+    <div style="
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    ">
+      <div style="max-width: 500px; margin: auto 0;">
+        <h2 style="font-size: 28px; font-weight: 600; margin-bottom: 20px;">Education curriculum</h2>
+        <p style="font-size: 18px; line-height: 1.6;">
+          At Moso, we welcome beginners and teach you everything from the ground up in our academy bootcamp: the different stages of venture capital, how to source deals, how to conduct due diligence, and how to write and present a full investment memo. Our curriculum is rigorous, hands-on, and designed to help you think like an investor — culminating in pitching a real startup to Moso board. If you show up hungry to learn, we’ll meet you there.
+        </p>
+      </div>
+    </div>
+
+    <!-- Image Block (right) -->
+    <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+      <img src="education.jpeg" alt="Education curriculum" style="max-height: 90%; max-width: 100%; border-radius: 16px;" />
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Career treks -->
+  <section style="background-color: #FDF8F3; padding: 0px 20px 30px 10px; font-family: 'Montserrat', sans-serif; color: #1e1e1e;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; height: 100%;">
+
+<!-- Image Carousel Section -->
+<div style="flex: 1; min-width: 300px; max-width: 3000px; position: relative; display: flex; align-items: flex-start;">
+  <img id="trek-carousel" src="bcv.jpeg" alt="Career Trek" 
+       style="width: 100%; height: 390px; object-fit: cover; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: opacity 0.6s ease;">
+</div>
+
+<script>
+  const trekImages = [
+    "bcv.jpeg",
+    "bessemer.jpeg",
+    "bofa.jpeg",
+    "insight.jpeg",
+    "lazard.jpeg",
+    "lead.jpeg",
+    "nea.jpeg"
+  ];
+
+  let trekIndex = 0;
+  setInterval(() => {
+    trekIndex = (trekIndex + 1) % trekImages.length;
+    const imgElement = document.getElementById("trek-carousel");
+    imgElement.style.opacity = 0;
+    setTimeout(() => {
+      imgElement.src = trekImages[trekIndex];
+      imgElement.style.opacity = 1;
+    }, 300);
+  }, 6000); // 6 second interval
+</script>
+
+<!-- Text Block (right, vertically centered and right-aligned) -->
+    <div style="flex: 1; display: flex; justify-content: flex-end; align-items: center;">
+      <div style="max-width: 500px; margin: auto 0;">
+        <h2 style="font-size: 28px; font-weight: 600; margin-bottom: 20px;">Collaborative Approach</h2>
+        <p style="font-size: 18px; line-height: 1.6;">
+          Every semester, Moso takes students to a career trek. While we’re rooted in venture, our career treks open doors across industries — from investment banking and growth equity to early-stage startups and top VC firms. We spend a day in New York visiting 3-4 offices, meeting professionals, and learning what these careers actually look like. It’s a chance to explore paths you might not have considered, build your network, and bond with your Moso teammates over new neighborhoods and late-night bites. No application, no cut — if you’re part of Moso, you’re welcome to come.
+        </p>
+      </div>
+    </div>
+</section>
+
+<!-- The Moso community -->
+<section style="background-color: #14946C; color: #FDF8F3; font-family: 'Montserrat', sans-serif; padding: 1.5rem;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;">
+
+    <!-- Left: Text & Alumni List -->
+    <div style="flex: 1 1 55%; padding-right: 2rem;">
+      <h2 style="font-size: 32px; font-weight: 700;"> The Moso community</h2>
+      <p style="font-size: 16px; line-height: 1.6; margin-bottom: 2rem;">
+       A lot of us joined Moso as freshmen. What we found was more than just a club. We found people who’d become our closest friends: from classmates to bigs and littles. From intense cards against humanity rounds to supporting each other through recruiting or late-night Kiwi runs, Moso knows how to have fun and shows up for one another.
+      </p>
+
+<!-- Right: Image Carousel -->
+<div style="flex: 1; min-width: 300px; max-width: 100%; position: relative; display: flex; align-items: flex-start;">
+  <img id="community-carousel" src="0.jpeg" alt="Moso Fun" 
+       style="width: 100%; height: 390px; object-fit: cover; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: opacity 0.6s ease;">
+</div>
+
+<script>
+  const communityImages = [
+    "0.jpeg",
+    "0CBBFFD7-AFDB-441D-BF3C-2DBB769F6B26.JPG",
+    "d51e73ec-778e-4005-adb2-7d403ef12fc3.JPG",
+    "IMG_1028.jpeg",
+    "IMG_1245.jpeg", "5C8FA845-B4AC-45EF-A385-5C83A902D432.JPG",
+    "23980001.JPG", "IMG_1757.jpeg", 
+    "IMG_1824.jpeg", "IMG_2247.jpeg", "IMG_2633.JPG", "IMG_3929.jpeg",
+    "IMG_3946.jpeg", "IMG_4111.jpeg", "IMG_4219.jpeg", 
+    "IMG_4277.jpeg", "IMG_4187.jpeg", "IMG_4520.jpeg", "IMG_4568.jpeg", "IMG_5351.jpeg", 
+    "IMG_5412.JPEG", "IMG_8071.jpeg"
+  ];
+
+  let communityIndex = 0;
+  setInterval(() => {
+    communityIndex = (communityIndex + 1) % communityImages.length;
+    const imgElement = document.getElementById("community-carousel");
+    imgElement.style.opacity = 0;
+    setTimeout(() => {
+      imgElement.src = communityImages[communityIndex];
+      imgElement.style.opacity = 1;
+    }, 300);
+  }, 2500); // change every 2.5 seconds
+</script>
+  </div>
+</section>
+
+<!-- Our Moso Alumni -->
+  <section style="background-color: #14946C; color: #FDF8F3; font-family: 'Montserrat', sans-serif; padding: 1.5rem;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;">
+    
+    <!-- Left: Text & Alumni List -->
+    <div style="flex: 1 1 55%; padding-right: 2rem;">
+      <h2 style="font-size: 32px; font-weight: 700;">Our Moso alumni.</h2>
+      <p style="font-size: 16px; line-height: 1.6; margin-bottom: 2rem;">
+        Moso alumni are more than just past teammates — they’re lifelong partners. From early-stage founders to investors, product operators, and engineers, we’re proud to always be able to draw on a vibrant network who know what meaningful support looks like.
+      </p>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+        <ul style="flex: 1; list-style: none; padding: 0;">
+          <li><a href="https://www.linkedin.com/in/naenaemontawan/" style="color: #FDF8F3;">Nae Nae Chairatchaeneboon</a></li>
+          <li><a href="https://www.linkedin.com/in/gabrielaeck/" style="color: #FDF8F3;">Gabriela Eckschmidt</a></li>
+          <li><a href="https://www.linkedin.com/in/hoonlee/" style="color: #FDF8F3;">Hoon Lee</a></li>
+          <li><a href="https://www.linkedin.com/in/christine-kang-b7bb09176/" style="color: #FDF8F3;">Christine Kang</a></li>
+          <li><a href="https://www.linkedin.com/in/donald-le-95b0251aa/" style="color: #FDF8F3;">Donald Le</a></li>
+          <li><a href="https://www.linkedin.com/in/ryan-schager/" style="color: #FDF8F3;">Ryan Schager</a></li>
+          <li><a href="https://www.linkedin.com/in/rachelwang/" style="color: #FDF8F3;">Rachel Wang</a></li>
+          <li><a href="https://www.linkedin.com/in/napattl/" style="color: #FDF8F3;">Napat Thongtanakul</a></li>
+          <li><a href="https://www.linkedin.com/in/catherinezc/" style="color: #FDF8F3;">Catherine Zhang</a></li>
+          <li><a href="https://www.linkedin.com/in/katherine-wei05/" style="color: #FDF8F3;">Katherine Wei</a></li>
+        </ul>
+        <ul style="flex: 1; list-style: none; padding: 0;">
+          <li><a href="https://www.linkedin.com/in/davide-lorenzoni-74a94927a/" style="color: #FDF8F3;">Davide Lorenzoni</a></li>
+          <li><a href="https://www.linkedin.com/in/dan-gao/" style="color: #FDF8F3;">Dan Gao</a></li>
+          <li><a href="https://www.linkedin.com/in/shafira-novianti-adi-dwi-putri-92309029/" style="color: #FDF8F3;">Shafira Novianti</a></li>
+          <li><a href="https://www.linkedin.com/in/sophia-chan-95aa82217/" style="color: #FDF8F3;">Sophia Chan</a></li>
+          <li><a href="https://www.linkedin.com/in/grant-mao-513a92202/" style="color: #FDF8F3;">Grant Mao</a></li>
+          <li><a href="https://www.linkedin.com/in/billchennn/" style="color: #FDF8F3;">Bill Chen</a></li>
+          <li><a href="https://www.linkedin.com/in/winniewang/" style="color: #FDF8F3;">Winnie Wang</a></li>
+          <li><a href="https://www.linkedin.com/in/angelaseo2026/" style="color: #FDF8F3;">Angela Seo</a></li>
+          <li><a href="https://www.linkedin.com/in/victoriazhu2" style="color: #FDF8F3;">Victoria Zhu</a></li>
+          <li><a href="https://www.linkedin.com/in/alexandra-dshinca/" style="color: #FDF8F3;">Alex Dshinca</a></li>
+        </ul>
+        <ul style="flex: 1; list-style: none; padding: 0;">
+          <li><a href="https://www.linkedin.com/in/dwight-koyner-140a0b242/" style="color: #FDF8F3;">Dwight Koyner</a></li>
+          <li><a href="https://www.linkedin.com/in/araash-ahuja-abb3421b1/" style="color: #FDF8F3;">Araash Ahuja</a></li>
+          <li><a href="https://www.linkedin.com/in/justina-alvarez-zoldi/" style="color: #FDF8F3;">Justina Alvarez-Zoldi</a></li>
+          <li><a href="https://www.linkedin.com/in/sungyuncho0912" style="color: #FDF8F3;">Sung-Yun Cho</a></li>
+          <li><a href="https://www.linkedin.com/in/david-liu-yl/" style="color: #FDF8F3;">David Liu</a></li>
+          <li><a href="https://www.linkedin.com/in/anshuman-singhal/" style="color: #FDF8F3;">Anshuman Singhal</a></li>
+          <li><a href="https://www.linkedin.com/in/lee-su-yeon-392b8b1a4" style="color: #FDF8F3;">Yeon Lee</a></li>
+          <li><a href="https://www.linkedin.com/in/ashleyslin/" style="color: #FDF8F3;">Ashley Lin</a></li>
+          <li><a href="https://www.linkedin.com/in/brett-levy-09329b1b5/" style="color: #FDF8F3;">Brett Levy</a></li>
+          <li><a href="https://www.linkedin.com/in/michaelalfano/" style="color: #FDF8F3;">Michael Alfano</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right: Images -->
+    <div style="flex: 1 1 40%; display: flex; flex-direction: column; align-items: flex-end; gap: 1rem; padding-right: 1rem;">
+      <img src="alumni.jpeg" alt="Moso Alumni" style="max-width: 90%; border-radius: 12px;" />
+    </div>
+  </div>
+</section>
+
+<!-- Where our Moso members go -->
+<section style="background-color: #FDF8F3; color: #1e1e1e; font-family: 'Montserrat', sans-serif; padding: 2rem;">
+  <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+    <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 0.5rem;">Where our Moso members go</h2>
+    <p style="font-size: 18px; line-height: 1.6; margin-bottom: 2rem;">
+      We're committed to preparing our members for success in their personal and professional paths. We make sure that our upperclassmen are available for our younger members. Along the way, mentorships become friendships. Internships and full-time offers include firms below:
+    </p>
+    <img src="placement.jpeg" alt="Moso Alumni Placements" style="max-width: 100%; height: auto; border-radius: 12px;" />
+  </div>
+</section>
+
+<footer style="background-color: #14946C; font-family: 'Montserrat', sans-serif; color: #f5f5f5;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px; display: flex; flex-wrap: wrap; gap: 80px;">
+
+    <!-- Column 1: Organization -->
+    <div style="min-width: 200px;">
+      <h3 style="font-weight: 500; margin-bottom: 1rem;">Organization</h3>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li><a href="why.html" style="color: #FDF8F3; text-decoration: underline;">Why Moso?</a></li>
+        <li><a href="team.html" style="color: #FDF8F3; text-decoration: underline;">Team</a></li>
+        <li><a href="casestudy.html" style="color: #FDF8F3; text-decoration: underline;">Case Study?</a></li>
+        <li><a href="insights.html" style="color: #FDF8F3; text-decoration: underline;">Insights?</a></li>
+	<li><a href="joinus.html" style="color: #FDF8F3; text-decoration: underline;">Join Us</a></li>
+      </ul>
+    </div>
+
+  <!-- Footer bottom bar -->
+  <div style="border-top: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; flex-wrap: wrap;">
+    <div style="display: flex; gap: 20px;">
+      <a href="#"><img src="linkedin.svg" alt="LinkedIn" style="height: 20px;"></a>
+      <a href="#"><img src="instagram.svg" alt="Instagram" style="height: 20px;"></a>
+    </div>
+    <p style="margin: 0; font-size: 14px;">© Moso Capital, 2025</p>
+  </div>
+</footer>
+
+</body>
+</html>
