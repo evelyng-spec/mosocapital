@@ -88,6 +88,71 @@
   max-width: 1000px;
   padding: 0 20px;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 32px !important;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 16px !important;
+  }
+
+  .hero-content {
+    padding: 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons button {
+    margin: 10px 0;
+  }
+
+  footer {
+    padding: 20px 10px !important;
+  }
+
+  footer > div {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .navbar img {
+    height: 60px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+}
   </style>
 </head>
 <body>
@@ -123,7 +188,7 @@
     <!-- Blog 1 -->
     <div style="flex: 1 1 400px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
       <a href="elythea.html" style="text-decoration: none; color: inherit;">
-        <img src="elythea.jpg" alt="Elythea" style="width: 100%; height: 250px; object-fit: cover;">
+        <img src="elythea.jpg" alt="Elythea" style="width: 100%; max-height: 250px; object-fit: cover;">
         <div style="padding: 1.5rem;">
           <h3 style="font-size: 1.25rem; font-weight: 600; margin: 0;">
             Our Investment in Elythea: Revolutionizing how doctors diagnose pregnancy complications through pioneer ML predictive analytics (01.2024)
@@ -135,7 +200,7 @@
     <!-- Blog 2 -->
     <div style="flex: 1 1 400px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
       <a href="nafta.html" style="text-decoration: none; color: inherit;">
-        <img src="nafta.jpg" alt="NAFTA" style="width: 100%; height: 250px; object-fit: cover;">
+        <img src="nafta.jpg" alt="NAFTA" style="width: 100%; max-height: 250px; object-fit: cover;">
         <div style="padding: 1.5rem;">
           <h3 style="font-size: 1.25rem; font-weight: 600; margin: 0;">
             NAFTA, Tradewars, Super Peso: Mexico to Become the Next Manufacturing & Tech Hub? (04.2024)
