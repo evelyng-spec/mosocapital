@@ -81,6 +81,64 @@
       object-fit: cover;
     }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left, .right {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .left h1 {
+    font-size: 32px;
+  }
+
+  .left p, .buttons button {
+    font-size: 16px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .buttons button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  section h2 {
+    font-size: 28px !important;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer div[style*="text-align: right"] {
+    text-align: center !important;
+    padding: 10px 0 !important;
+  }
+}
   </style>
 </head>
 <body>
