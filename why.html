@@ -73,15 +73,25 @@
   }
 }
 
-    .section h2 {
-      font-size: 24px;
-    }
+    /* Responsive Hero Section */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
 
-    .section p {
-      font-size: 16px;
-    }
+  .hero-content h1 {
+    font-size: 32px !important;
+  }
 
-    footer div[style*="display: flex"] {
+  .hero-content p {
+    font-size: 16px !important;
+  }
+}
+
+    /* Footer Responsiveness */
+@media (max-width: 768px) {
+  footer div[style*="display: flex"] {
       flex-direction: column !important;
       align-items: center !important;
       text-align: center !important;
