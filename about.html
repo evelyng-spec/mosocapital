@@ -88,6 +88,94 @@
   max-width: 1000px;
   padding: 0 20px;
 }
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px !important;
+  }
+
+  .hero-content p {
+    font-size: 16px !important;
+  }
+}
+
+/* Responsive Grid for Process Section */
+@media (max-width: 768px) {
+  .hover-box {
+    padding: 1rem;
+  }
+
+  section div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Responsive Stat Lines */
+@media (max-width: 768px) {
+  .stat-line {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1rem;
+  }
+
+  .stat-line div[style*="padding-left"] {
+    padding-left: 0 !important;
+  }
+}
+
+/* Responsive Our Model / Team Section */
+@media (max-width: 768px) {
+  section[style*="about2.jpeg"] {
+    padding: 2rem !important;
+  }
+
+  section[style*="about2.jpeg"] > div {
+    flex-direction: column;
+  }
+
+  section[style*="about2.jpeg"] div {
+    flex: 1 1 100% !important;
+  }
+}
+
+/* Footer Responsiveness */
+@media (max-width: 768px) {
+  footer div[style*="display: flex"] {
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  footer div[style*="text-align: right"] {
+    text-align: center !important;
+    padding: 10px 20px;
+  }
+}
   </style>
 </head>
 <body>
