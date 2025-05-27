@@ -81,19 +81,24 @@
       object-fit: cover;
     }
 
+/* Responsive Navbar */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
     padding: 10px 20px;
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
     font-size: 16px;
   }
+}
 
   .main {
     flex-direction: column;
@@ -128,15 +133,17 @@
     font-size: 28px !important;
   }
 
-  .footer {
+  /* Footer Responsiveness */
+@media (max-width: 768px) {
+  footer div[style*="display: flex"] {
     flex-direction: column;
-    align-items: center;
+    align-items: center !important;
     text-align: center;
   }
 
   footer div[style*="text-align: right"] {
     text-align: center !important;
-    padding: 10px 0 !important;
+    padding: 10px 20px;
   }
 }
   </style>
